@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lamumudotxyz Pacman Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="scoreDisplay">Score: 0</div>
+  <div id="userDisplay"></div>
+  <canvas id="gameCanvas"></canvas>
+
+  <div id="loginOverlay" class="overlay">
+    <h2>Enter Your Username</h2>
+    <input type="text" id="usernameInput" placeholder="@nickname" />
+    <button id="startBtn">Continue</button>
+  </div>
+
+  <div id="messageOverlay" class="overlay hidden">
+    <h2 id="welcomeText"></h2>
+    <button id="confirmBtn">Accept</button>
+  </div>
+
+  <div id="startOverlay" class="overlay hidden">
+    <h2>Press The SPACE Button to Start The Game</h2>
+  </div>
+
+  <div id="gameOverOverlay" class="overlay hidden">
+    <h1>GAME LAMUMU-OVER</h1>
+    <h3>Press The SPACE Button to Restart</h3>
+  </div>
+
+  <div id="winOverlay" class="overlay hidden">
+    <h1>You Have Earned A Spot On The Lamumudotxyz NFT Whitelist</h1>
+    <h3>Press The SPACE Button to Restart</h3>
+  </div>
+  
+  <audio
+    id="eatSound"
+    src="https://ia800201.us.archive.org/15/items/PacManEatingSoundEffect/pacman_chomp.wav"
+    preload="auto"
+  ></audio>
+
+  <audio
+    id="gameOverSound"
+    src="https://actions.google.com/sounds/v1/horror/game_over.ogg"
+    preload="auto"
+  ></audio>
+
+  <script src="main.js"></script>
+</body>
+</html>
